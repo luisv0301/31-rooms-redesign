@@ -1,0 +1,27 @@
+.testimonial {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-image: url("../../images/quotes.svg");
+  background-repeat: no-repeat;
+  background: linear-gradient(
+    165.1deg,
+    #1f2937 9.03%,
+    rgba(17, 24, 39, 0) 80.2%
+  );
+  border-radius: 1rem;
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 596px;
+  }
+  &__subtitle {
+    font-size: 1.5rem;
+  }
+}

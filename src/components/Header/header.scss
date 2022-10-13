@@ -1,0 +1,30 @@
+.header{
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1052px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    gap: 1rem;
+
+    &__container{
+        background-image: url("../../images/header-bg.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    &__description{
+        flex: 1 1 596px;
+    }
+
+    &__img-container{
+        flex: 1 1 388px;
+    }
+
+    &__cta{
+        margin-top: 2rem;
+    }
+}

@@ -1,0 +1,33 @@
+.project {
+  list-style: none;
+  &__card {
+    display: flex;
+    gap: 1rem;
+  }
+  &__description {
+    flex: 1 513px;
+    flex-direction: column;
+    display: flex;
+
+    gap: 1rem;
+  }
+  .tags {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+    .tag {
+      background-color: #a5b4fc;
+      color: #312e81;
+      font-size: 0.87rem;
+      padding: 0.25rem 0.5rem;
+      border-radius: 100vmax;
+      &:nth-child(even) {
+        background: #5eead4;
+        color: #134e4a;
+      }
+    }
+  }
+}

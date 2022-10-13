@@ -1,0 +1,15 @@
+.banner {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  padding: 4rem 1rem;
+  background-image: url("../../images/waves-bg.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  h3 {
+    max-width: 992px;
+  }
+}

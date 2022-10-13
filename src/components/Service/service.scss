@@ -1,0 +1,23 @@
+.service {
+  list-style: none;
+  flex: 0 1 329px;
+  &__card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem 2rem 2.5rem 2rem;
+    background: linear-gradient(
+      165.1deg,
+      #1f2937 9.03%,
+      rgba(17, 24, 39, 0) 80.2%
+    );
+    border-radius: 1rem;
+    border-top: 2px solid #374151;
+    border-left: 2px solid #374151;
+  }
+  &__description {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

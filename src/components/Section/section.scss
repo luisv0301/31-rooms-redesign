@@ -1,0 +1,17 @@
+.section {
+  max-width: 1052px;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+  &::before {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 52px;
+    background-color: #d3222a;
+    position: absolute;
+  }
+  h2 {
+    position: relative;
+    padding-left: 20px;
+  }
+}
