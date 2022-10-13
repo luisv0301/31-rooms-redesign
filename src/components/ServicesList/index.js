@@ -3,8 +3,7 @@ import "./servicesList.scss";
 
 export default function ServicesList() {
   return (
-    <ul role="list" className="servicesList">
-      <Service />
+    <ul className="servicesList">
       <Service />
       <Service />
     </ul>

@@ -1,4 +1,5 @@
 import logo from "../../images/logo-31-rooms.png";
+import hand from "../../images/hand.png";
 import "./footer.scss";
 
 export default function Footer() {
@@ -39,7 +40,10 @@ export default function Footer() {
           </span>
         </div>
         <div className="footer__contact">
-          <h3>¿Tienes alguna duda? Dejanos un mensaje</h3>
+          <h3>
+            ¿Tienes alguna duda? Dejanos un mensaje
+            <img src={hand} alt="" width="160" height="160" />
+          </h3>
           <a href="info@31rooms.com" className="footer__email">
             <svg
               width="32"

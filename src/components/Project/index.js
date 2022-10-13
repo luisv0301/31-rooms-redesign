@@ -6,7 +6,7 @@ export default function Project() {
     <li className="project">
       <article className="project__card">
         <div className="project__description">
-          <p>Inmueble azu</p>
+          <p className="project__subtitle">Inmueble azul</p>
           <h3>
             Plataforma para ayudar a las personas a encontrar su nuevo hogar
           </h3>

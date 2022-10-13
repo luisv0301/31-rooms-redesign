@@ -1,19 +1,36 @@
+@use "../../mediaQueries" as m;
+
 .testimonial {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   justify-content: space-between;
   align-items: flex-start;
   max-width: 860px;
   margin: 0 auto;
   padding: 2rem;
-  background-image: url("../../images/quotes.svg");
-  background-repeat: no-repeat;
+  position: relative;
   background: linear-gradient(
     165.1deg,
     #1f2937 9.03%,
     rgba(17, 24, 39, 0) 80.2%
   );
   border-radius: 1rem;
+  overflow: hidden;
+  &::after {
+    content: "";
+    display: block;
+    width: 128px;
+    height: 90px;
+    background-image: url("../../images/quotes.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    right: 4rem;
+    top: 0;
+    z-index: -1;
+  }
 
   &__description {
     display: flex;
@@ -22,6 +39,18 @@
     max-width: 596px;
   }
   &__subtitle {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
+  }
+  &__starts {
+    display: flex;
+    gap: 0.25rem;
+    img {
+      width: 1.5rem;
+    }
+  }
+  @include m.small {
+    & > img {
+      width: 98px;
+    }
   }
 }

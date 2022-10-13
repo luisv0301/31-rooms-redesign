@@ -1,17 +1,23 @@
+@use "../../mediaQueries" as m;
+
 .section {
   max-width: 1052px;
   margin: 0 auto;
   padding: 4rem 1rem;
-  &::before {
-    content: "";
+  overflow: hidden;
+  .decorative {
     display: block;
-    width: 12px;
-    height: 52px;
+    width: 10px;
     background-color: #d3222a;
-    position: absolute;
   }
   h2 {
-    position: relative;
-    padding-left: 20px;
+    display: flex;
+    gap: 0.5rem;
+  }
+  @include m.medium {
+    h2 {
+      width: fit-content;
+      margin: 0 auto;
+    }
   }
 }

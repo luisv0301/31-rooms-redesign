@@ -1,4 +1,5 @@
 import testimonial from "../../images/testimonial-photo.png";
+import start from "../../images/start.png";
 import "./testimonial.scss";
 
 export default function Testimonial() {
@@ -15,7 +16,13 @@ export default function Testimonial() {
           company's internal team. The feedback from users is overwhelmingly
           positive.”
         </p>
-        <div className="testimonial__starts">⭐️⭐️⭐️⭐️⭐️</div>
+        <div className="testimonial__starts">
+          <img src={start} alt="" width="160" height="160" />
+          <img src={start} alt="" width="160" height="160" />
+          <img src={start} alt="" width="160" height="160" />
+          <img src={start} alt="" width="160" height="160" />
+          <img src={start} alt="" width="160" height="160" />
+        </div>
       </div>
     </div>
   );

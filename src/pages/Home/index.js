@@ -1,5 +1,6 @@
 import React from "react";
 import Banner from "../../components/Banner";
+import Clients from "../../components/Clients";
 import ExperienceTestimonial from "../../components/ExperienceTestimonial";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
@@ -20,6 +21,7 @@ export default function Home() {
         <ProjectsList />
       </Section>
       <Section title="Nuestros clientes">
+        <Clients />
         <Testimonial />
       </Section>
       <Banner />
