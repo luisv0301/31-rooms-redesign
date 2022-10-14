@@ -2,22 +2,63 @@
   list-style: none;
   flex: 1 1 294px;
   &__card {
+    isolation: isolate;
+    overflow: hidden;
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 2rem;
     padding: 1rem 2rem 2.5rem 2rem;
     background: linear-gradient(
       165.1deg,
-      #1f2937 9.03%,
+      #1f2937b3 9.03%,
       rgba(17, 24, 39, 0) 80.2%
     );
     border-radius: 1rem;
-    border-top: 2px solid #374151;
-    border-left: 2px solid #374151;
+    border-top: 1px solid #374151;
+    border-left: 1px solid #374151;
+    &::before {
+      content: "";
+      display: block;
+      aspect-ratio: 1;
+      z-index: -1;
+      border-radius: 50vmax;
+      filter: blur(92px);
+      width: 40%;
+      opacity: 0.65;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: linear-gradient(176.09deg, #dc232c 16.52%, #5c0000 96.23%);
+    }
+  }
+  &__img {
+    position: relative;
+    place-items: center;
+    display: grid;
+    aspect-ratio: 1;
+    width: 96px;
+    border-radius: 50vmax;
+    border: 3px solid;
+    animation: 2s infinite alternate hideBorder;
+    img {
+      width: 4rem;
+    }
   }
   &__description {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+  }
+}
+
+@keyframes hideBorder {
+  from {
+    border-color: rgba(211, 34, 43, 0);
+  }
+
+  to {
+    border-color: rgb(211, 34, 42);
   }
 }

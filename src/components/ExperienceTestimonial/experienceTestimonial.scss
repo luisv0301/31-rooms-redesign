@@ -8,13 +8,32 @@
     justify-content: center;
     gap: 1.5rem;
     padding: 0;
-
-    li {
-      flex: 0 1 140px;
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
+  }
+  &__item {
+    flex: 0 1 140px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    h2 {
+      background: linear-gradient(176.09deg, #dc232c 16.52%, #5c0000 96.23%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  &__item--border {
+    border-inline: 1px solid rgba(255, 255, 255, 0.25);
+    flex-basis: 200px;
+    padding: 0 2rem;
+  }
+  @media (max-width: 558px) {
+    &__item {
+      text-align: center;
+    }
+    &__item--border {
+      border-inline: none;
+      flex-basis: 140px;
+      padding: 0;
     }
   }
 }

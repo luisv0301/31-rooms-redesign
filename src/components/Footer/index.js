@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import logo from "../../images/logo-31-rooms.png";
 import hand from "../../images/hand.png";
 import "./footer.scss";
@@ -20,17 +21,17 @@ export default function Footer() {
                 opacity="0.8"
                 d="M20 14C20 15.0609 19.5786 16.0783 18.8284 16.8284C18.0783 17.5786 17.0609 18 16 18C14.9391 18 13.9217 17.5786 13.1716 16.8284C12.4214 16.0783 12 15.0609 12 14C12 12.9391 12.4214 11.9217 13.1716 11.1716C13.9217 10.4214 14.9391 10 16 10C17.0609 10 18.0783 10.4214 18.8284 11.1716C19.5786 11.9217 20 12.9391 20 14V14Z"
                 stroke="white"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
               <path
                 opacity="0.8"
                 d="M26 14C26 23.5227 16 29 16 29C16 29 6 23.5227 6 14C6 11.3478 7.05357 8.8043 8.92893 6.92893C10.8043 5.05357 13.3478 4 16 4C18.6522 4 21.1957 5.05357 23.0711 6.92893C24.9464 8.8043 26 11.3478 26 14V14Z"
                 stroke="white"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
             </svg>
             Ciudad de México, México
@@ -42,7 +43,19 @@ export default function Footer() {
         <div className="footer__contact">
           <h3>
             ¿Tienes alguna duda? Dejanos un mensaje
-            <img src={hand} alt="" width="160" height="160" />
+            <motion.img
+              src={hand}
+              alt=""
+              width="160"
+              height="160"
+              initial={{ rotate: 20 }}
+              animate={{ rotate: -35 }}
+              transition={{
+                duration: 1.6,
+                repeat: Infinity,
+                repeatType: "reverse",
+              }}
+            />
           </h3>
           <a href="info@31rooms.com" className="footer__email">
             <svg
@@ -56,9 +69,9 @@ export default function Footer() {
                 opacity="0.8"
                 d="M12 5H9.216C8.5746 5.00012 7.95012 5.2058 7.43419 5.58687C6.91826 5.96793 6.53805 6.50432 6.34933 7.11733L3.13333 17.5693C3.04525 17.8548 3.00031 18.1519 3 18.4507V24C3 24.7957 3.31607 25.5587 3.87868 26.1213C4.44129 26.6839 5.20435 27 6 27H26C26.7957 27 27.5587 26.6839 28.1213 26.1213C28.6839 25.5587 29 24.7957 29 24V18.4507C29 18.152 28.9547 17.8547 28.8667 17.5693L25.6533 7.11733C25.4646 6.50432 25.0844 5.96793 24.5685 5.58687C24.0525 5.2058 23.4281 5.00012 22.7867 5H20M3 18H8.14667C8.70373 18.0001 9.24975 18.1554 9.72356 18.4483C10.1974 18.7413 10.5803 19.1604 10.8293 19.6587L11.1707 20.3413C11.4198 20.8398 11.8029 21.259 12.277 21.552C12.7511 21.845 13.2974 22.0001 13.8547 22H18.1453C18.7026 22.0001 19.2489 21.845 19.723 21.552C20.1971 21.259 20.5802 20.8398 20.8293 20.3413L21.1707 19.6587C21.4198 19.1602 21.8029 18.741 22.277 18.448C22.7511 18.155 23.2974 17.9999 23.8547 18H29M16 4V15M16 15L12 11M16 15L20 11"
                 stroke="white"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
             </svg>
             info@31rooms.com
