@@ -12,12 +12,12 @@ const data = [
     thumbnail: inmueble,
   },
   {
-    title: "Inmueble azul",
+    title: "Coded",
     description: "Creando nuevas oportunidades a partir de la educación",
     thumbnail: coded,
   },
   {
-    title: "Coded",
+    title: "Vialterna",
     description: "Soluciones tecnologicas para el hogar y la empresa",
     thumbnail: via,
   },

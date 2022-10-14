@@ -6,7 +6,13 @@ export default function Navbar() {
   return (
     <div className="nav__container">
       <nav className="nav">
-        <img src={logo} alt="31 Rooms logo" width="95" height="32" />
+        <img
+          src={logo}
+          alt="31 Rooms logo"
+          width="95"
+          height="32"
+          className="logo"
+        />
         <Select />
       </nav>
     </div>
